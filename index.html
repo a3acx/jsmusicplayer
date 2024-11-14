@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Playlist Player</h1>
+        <input type="file" id="audioFileInput" multiple accept="audio/*">
+        <audio id="audioPlayer" controls style="display: none;">
+            <source id="audioSource" src="">
+        </audio>
+        <div class="controls">
+            <button id="prevButton">Previous</button>
+            <button id="playPauseButton">Play</button>
+            <button id="nextButton">Next</button>
+        </div>
+        <p id="status">Status: No files selected</p>
+        <footer>
+            <p>&copy; Copyright 2024, Anand Media Player, All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
